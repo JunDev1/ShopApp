@@ -33,7 +33,6 @@ class ShopListAdapter :
         }
         holder.tvName.text = shopItem.name
         holder.tvCount.text = shopItem.count.toString()
-
     }
 
     override fun getItemViewType(position: Int): Int {
