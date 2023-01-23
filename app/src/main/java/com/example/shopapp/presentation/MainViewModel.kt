@@ -1,10 +1,7 @@
 package com.example.shopapp.presentation
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.shopapp.data.ShopListRepositoryImpl
-import com.example.shopapp.data.ShopListRepositoryImpl.getShopList
 import com.example.shopapp.domain.*
 
 class MainViewModel : ViewModel() {
@@ -13,7 +10,7 @@ class MainViewModel : ViewModel() {
 
     private val getShopItemUseCase = GetShopListUseCase(repository)
     private val deleteShopItemUseCase = DeleteShopListUseCase(repository)
-    private val modifyShopItemUseCaseUseCase = ModifyShopListUseCase(repository)
+    private val modifyShopItemUseCaseUseCase = ModifyShopItemUseCase(repository)
 
     val shopList = getShopItemUseCase.getShopList()
 
