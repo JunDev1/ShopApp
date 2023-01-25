@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".presentation.ShopItemActivity"
     android:id="@+id/shopItemContainer"
-    android:name="com.example.shopapp.presentation.ShopItemFragment"
     tools:layout="@layout/fragment_shop_item">
 
 
